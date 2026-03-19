@@ -8,7 +8,7 @@ from tensorflow.keras import layers, models
 from tensorflow.keras.applications import EfficientNetB0
 from datasets import load_dataset
 from fpdf import FPDF
-
+MODEL_PATH = "model/vitiguard_model.h5"
 st.set_page_config(page_title="VitiGuard AI 🍇", layout="wide")
 
 os.makedirs("model", exist_ok=True)
