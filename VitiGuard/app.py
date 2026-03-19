@@ -1,4 +1,7 @@
 import os
+from huggingface_hub import login
+HF_TOKEN = "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"
+login(token=HF_TOKEN)
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
@@ -179,10 +182,11 @@ else:
         ax.axis("off")
         st.pyplot(fig)
 
-        pdf_bytes = generate_pdf(disease, confidence, info)
+       pdf_bytes = generate_pdf(disease, confidence, info)
         st.download_button(
             "Download AI Diagnosis Report",
             pdf_bytes,
             file_name=f"vitiguard_{disease}_report.pdf",
             mime="application/pdf"
         )
+        
