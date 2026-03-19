@@ -1,7 +1,8 @@
 streamlit
-tensorflow-cpu
-numpy<2.0.0
+tensorflow
+numpy
 matplotlib
 pillow
 datasets
 fpdf
+huggingface_hub
