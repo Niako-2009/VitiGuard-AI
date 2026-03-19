@@ -1,7 +1,7 @@
-streamlit==1.31.0
-tensorflow-cpu==2.15.0
-numpy==1.25.2
-matplotlib==3.8.2
-pillow==10.2.0
-datasets==2.16.1
-fpdf==1.7.2
+streamlit
+tensorflow-cpu
+numpy<2.0.0
+matplotlib
+pillow
+datasets
+fpdf
